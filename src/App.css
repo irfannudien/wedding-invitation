@@ -1,0 +1,67 @@
+.App {
+  text-align: center;
+}
+
+.warning-page {
+  display: flex;
+  background-color: black;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ============ ANIMATION FOR BG ============== */
+[data-aos="top-bg-right"] {
+  transform: translate3d(100%, -100%, 0);
+  opacity: 0;
+  transition-property: transform, opacity;
+  &.aos-animate {
+    transform: none;
+    opacity: 80%;
+  }
+}
+[data-aos="top-bg-left"] {
+  transform: translate3d(-100%, -100%, 0);
+  opacity: 0;
+  transition-property: transform, opacity;
+  &.aos-animate {
+    transform: none;
+    opacity: 80%;
+  }
+}
+
+/* ============== AUDIO ============== */
+.audio-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 1rem;
+  position: fixed;
+  bottom: 4.5rem;
+}
+
+.audio-play {
+  color: #222222;
+  width: 2rem;
+  height: 2rem;
+
+  animation: rotating 8s linear infinite;
+  transform-origin: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(90, 82, 63, 0.8);
+  border-radius: 50%;
+  /* opacity: 0.5; */
+  cursor: pointer;
+}
+
+/* Spin animation */
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

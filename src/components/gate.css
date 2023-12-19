@@ -1,0 +1,29 @@
+.gate-container {
+  display: flex;
+  justify-content: center;
+}
+
+.gate-content {
+  width: 85vw;
+  height: 82vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  bottom: 80px;
+  /* // left: 25; */
+
+  border-top-right-radius: 50% 25%;
+  border-top-left-radius: 50% 25%;
+  z-index: -10;
+}
+
+@media screen and (max-height: 640px) {
+  .gate-content {
+    bottom: 70px;
+  }
+}
+
+@media screen and (min-width: 478px) {
+  .gate-content {
+    width: 400px;
+  }
+}

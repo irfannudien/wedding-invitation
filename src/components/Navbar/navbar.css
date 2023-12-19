@@ -1,0 +1,33 @@
+.nav-container {
+  position: fixed;
+  bottom: 10px;
+  width: 95%;
+  z-index: 100;
+  border-radius: 10px;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.nav-link {
+  /* Light background color for inactive links */
+  color: rgb(156, 133, 79) !important; /* Text color for inactive links */
+}
+.nav-tabs {
+  width: 95% !important;
+}
+
+.nav-link.active {
+  border-color: #222222 !important;
+  background-color: rgb(
+    156,
+    133,
+    79
+  ) !important; /* Replace with your desired background color */
+  color: #222222 !important; /* Change the text color to make it readable */
+}
+
+@media screen and (max-height: 640px) {
+  .nav-container {
+    padding: 5px 0;
+  }
+}

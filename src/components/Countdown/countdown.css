@@ -1,0 +1,62 @@
+.countdown-container {
+  text-align: center;
+  /* font-size: 24px; */
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  /* width: 60%; */
+}
+
+.countdown-text {
+  font-family: "Marcellus", serif;
+}
+
+.countdown-item {
+  width: 50px;
+  /* height: 50px; */
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(156, 133, 79);
+  padding: 2px 5px;
+  font-family: "Marcellus", serif;
+  overflow: hidden;
+  border-radius: 20%;
+  border: 1px solid #222222;
+  letter-spacing: 1px;
+  color: #222222;
+  font-weight: 800;
+}
+
+.timer {
+  font-size: 22px;
+  line-height: normal;
+}
+.countdown-title {
+  font-size: 12px;
+}
+
+.countdown {
+  margin-top: 1rem;
+}
+/* ============== IPHONE 5 - Samsung S6 edge ================ */
+@media screen and (max-height: 640px) {
+  .countdown-container {
+    margin: 5px 15px;
+  }
+
+  .countdown-text {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+  .countdown-item {
+    width: 45px;
+  }
+  .timer {
+    font-size: 18px;
+  }
+  .countdown {
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,136 @@
+.event-container {
+  width: 85vw;
+  letter-spacing: 0.5px;
+}
+
+.top-img {
+  width: 35%;
+  opacity: 50%;
+}
+
+.text-event,
+.event-date-container,
+.time-start,
+.location,
+.street {
+  font-family: "Marcellus", serif;
+}
+
+.text-event {
+  font-size: 12px;
+}
+
+.event-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Allura", cursive;
+  font-size: 32px;
+  color: #9c844e;
+}
+
+.event-date-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.day,
+.month {
+  width: 100px;
+  font-size: 14px;
+}
+
+.time {
+  display: flex;
+  flex-direction: column;
+  border-left: 2px solid #9c844e;
+  border-right: 2px solid #9c844e;
+  padding: 0 15px;
+}
+
+.date {
+  font-size: 30px;
+  line-height: 1.2;
+}
+.years {
+  font-size: 16px;
+}
+
+.time-start {
+  font-size: 14px;
+}
+
+/* ================= CENTER LINE ================ */
+
+.center-line-img {
+  width: 90%;
+  opacity: 50%;
+}
+
+.event-location {
+  display: flex;
+  flex-direction: column;
+}
+
+.location {
+  font-size: 20px;
+  color: #9c844e;
+}
+
+.house {
+  font-family: "Arsenal", sans-serif;
+  font-size: 16px;
+}
+
+.street {
+  font-size: 12px;
+}
+
+/* ============== IPHONE 5, SE dan Samsung S6 ================ */
+@media screen and (max-height: 640px) {
+  .event-container {
+    margin-bottom: 50px;
+  }
+  .top-img {
+    margin-bottom: 10px !important;
+  }
+  .text-event,
+  .event-date-container {
+    margin-bottom: 5px !important;
+  }
+
+  .event-title {
+    font-size: 28px;
+    margin-bottom: 5px !important;
+  }
+
+  .date {
+    font-size: 22px;
+  }
+  .years {
+    font-size: 14px;
+  }
+
+  .time-start {
+    font-size: 12px;
+  }
+
+  /* ============ LINE ============ */
+  .center-line-img {
+    margin: 5px 10px 0 !important;
+  }
+  .location {
+    margin-bottom: 0 !important;
+    font-size: 18px;
+  }
+  .house {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 478px) {
+  .center-line-img {
+    width: 350px;
+  }
+}

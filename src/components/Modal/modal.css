@@ -1,0 +1,149 @@
+.modal-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.modal-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+.img-logo {
+  width: 280px;
+}
+
+.welcome-text,
+.visitor-text {
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+.welcome-text {
+  font-size: 14px;
+  font-family: "Marcellus", serif;
+  margin-bottom: 0;
+}
+.visitor-text {
+  font-size: 24px;
+  font-family: "Arsenal", sans-serif;
+  color: #bd9f5b;
+  margin-bottom: 10px;
+}
+
+.modal-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-family: "Arsenal", sans-serif;
+  background-color: #bd9f5b;
+  border: none;
+  color: #222222;
+  letter-spacing: 1px;
+  margin: 0.3rem 0;
+  border-radius: 10px;
+  padding: 2px 10px;
+}
+
+.modal-button:hover {
+  background-color: #8f7844 !important;
+}
+
+/* ================ NOT USE ==================== */
+
+.topLeft {
+  width: 35%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 80%;
+  /* z-index: -10; */
+}
+
+.topRight {
+  width: 35%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: 80%;
+  /* z-index: -10; */
+}
+
+.footer {
+  width: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 2%;
+  opacity: 80%;
+  animation: fade-in-up 2s;
+  /* z-index: -10; */
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 80%;
+    transform: none;
+  }
+}
+
+/* ================== MEDIA QUERY ==================== */
+
+@media (min-width: 576px) {
+  .topLeft,
+  .topRight {
+    width: 30%;
+  }
+}
+
+@media (min-width: 768px) {
+  .topLeft,
+  .topRight {
+    width: 25%;
+  }
+}
+
+@media (min-width: 992px) {
+  .topLeft,
+  .topRight {
+    width: 20%;
+  }
+}
+@media (min-width: 1200px) {
+  .topLeft,
+  .topRight {
+    width: 20%;
+  }
+}
+
+/* ================== MOBILE =============== */
+
+/* @media screen and (min-width: 378px) {
+  .img-logo {
+    width: 280px;
+  }
+} */
+
+/* ============== IPHONE 5 ================ */
+@media screen and (max-width: 520px) and (max-height: 640px) {
+  .modal-content {
+    margin-bottom: 30px;
+  }
+  .img-logo {
+    width: 55%;
+  }
+  .visitor-text {
+    font-size: 22px;
+  }
+  .modal-button {
+    font-size: 14px;
+  }
+}

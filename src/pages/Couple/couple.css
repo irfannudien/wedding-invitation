@@ -1,0 +1,49 @@
+.couple-img {
+  width: 40%;
+}
+
+.couple-name {
+  font-family: "Allura", cursive;
+  font-size: 26px;
+  color: #9c844e;
+  margin: 0;
+}
+
+.couple-title {
+  font-family: "Marcellus", serif;
+  font-size: 12px;
+  margin: 0;
+}
+
+.symbol {
+  font-size: 72px;
+  margin-top: 20px;
+}
+
+/* ============== IPHONE 5, SE dan Samsung S6 ================ */
+@media screen and (max-height: 640px) {
+  .couple-container {
+    margin-bottom: 50px;
+  }
+  .couple-img {
+    width: 35%;
+  }
+
+  .couple-name {
+    font-size: 22px;
+  }
+  .couple-title {
+    font-size: 10px;
+  }
+
+  .symbol {
+    margin-top: 10px;
+    font-size: 36px;
+  }
+}
+
+@media screen and (min-width: 428px) {
+  .couple-img {
+    width: 150px;
+  }
+}

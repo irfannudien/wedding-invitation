@@ -1,0 +1,203 @@
+.rsvp-container {
+  /* border: 2px solid white; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70vw;
+  /* height: 75vh; */
+  overflow-y: auto;
+}
+
+.text-rsvp {
+  font-family: "Allura", cursive;
+  font-size: 34px;
+  margin-bottom: 5px;
+  color: #9c844e;
+}
+
+.form-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input {
+  /* margin: 0 0 10px; */
+  /* background-color: #464646; */
+  background-color: rgba(53, 59, 65, 0.8);
+  border: 1px solid #575757;
+  color: white;
+}
+.form-input::placeholder {
+  color: grey;
+}
+.form-input:focus {
+  background-color: rgba(92, 92, 92, 0.8);
+  border: 1px solid rgba(191, 161, 92, 0.8);
+  box-shadow: none;
+  color: white;
+}
+
+/* =============== for color dropdown arrow ==================== */
+.form-input {
+  --bs-form-select-bg-img: url(data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27%3e%3cpath fill=%27none%27 stroke=%27white%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 stroke-width=%272%27 d=%27m2 5 6 6 6-6%27/%3e%3c/svg%3e);
+}
+
+.button-rsvp {
+  font-size: 1rem;
+  font-family: "Arsenal", sans-serif;
+  background-color: rgba(191, 161, 92, 0.8);
+  border: none;
+  color: #222222;
+  letter-spacing: 1px;
+  padding: 3px 10px;
+  width: 50%;
+  margin-bottom: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-rsvp:hover {
+  background-color: #8f7844 !important;
+}
+
+#data-rsvp {
+  width: 100%;
+  overscroll-behavior: none;
+  /* padding: 3px 0; */
+  max-height: 30vh;
+  overflow: auto;
+  border-radius: 3px;
+  margin-bottom: 5px;
+  /* border-top: 1px solid #9c9c9c; */
+  /* color: black; */
+}
+
+#data-rsvp ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#data-rsvp li {
+  color: #222222;
+  border-bottom: 1px solid #9c9c9c;
+  padding: 6px 10px;
+  background-color: #cecece;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
+  border-radius: 3px;
+  /* background-color: #f8f8f8; */
+  /* margin-bottom: 1px; */
+}
+
+.loading {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  color: white;
+  font-size: 24px;
+}
+
+.pagination {
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center; */
+  cursor: pointer;
+  /* padding: 10px 10px; */
+}
+
+.button-pagination {
+  padding: 0 8px;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+}
+.page,
+.active-page,
+.inactive-page {
+  color: rgb(191, 161, 92);
+}
+.page {
+  font-weight: 500;
+}
+
+.page-disabled {
+  color: grey;
+  font-weight: 500;
+}
+
+.active-page {
+  font-weight: bold;
+  text-decoration: underline !important;
+}
+
+.inactive-page {
+  font-weight: 100;
+}
+
+.inactive-page:hover {
+  font-weight: 500;
+}
+
+.fadeIn {
+  animation: fade-in 1s ease-in;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ============== IPHONE 5, SE dan Samsung S6 ================ */
+@media screen and (max-height: 640px) {
+  .rsvp-container {
+    margin-bottom: 40px;
+    width: 65vw;
+  }
+  .text-rsvp {
+    font-size: 26px;
+    margin-bottom: 0;
+  }
+
+  .form-input {
+    height: 25px;
+    font-size: 14px;
+    padding: 0 12px;
+  }
+
+  .form-input option {
+    font-size: 12px;
+    border-radius: 20% !important;
+  }
+
+  .button-rsvp {
+    height: 25px;
+  }
+
+  .invalid-feedback {
+    margin-top: 0 !important;
+  }
+
+  #data-rsvp {
+    max-height: 30vh;
+  }
+}
+
+@media screen and (min-width: 478px) {
+  .rsvp-container {
+    width: 350px;
+  }
+}

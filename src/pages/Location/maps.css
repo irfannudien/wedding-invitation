@@ -1,0 +1,51 @@
+/* .maps {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
+
+.gmaps {
+  width: 75vw;
+  height: 30vh;
+  border-radius: 10px;
+}
+
+.desc-maps {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-maps {
+  font-size: 1rem;
+  font-family: "Arsenal", sans-serif;
+  background-color: rgba(191, 161, 92, 0.8);
+  border: none;
+  color: #222222;
+  letter-spacing: 1px;
+  padding: 3px 10px;
+  width: 50%;
+}
+
+.button-maps:hover {
+  background-color: #8f7844 !important;
+}
+
+/* ============== IPHONE 5, SE dan Samsung S6 ================ */
+@media screen and (max-height: 640px) {
+  .maps-container {
+    margin-bottom: 25px;
+  }
+
+  .button-maps {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 478px) {
+  .gmaps {
+    width: 350px;
+  }
+}
