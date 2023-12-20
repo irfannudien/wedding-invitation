@@ -27,8 +27,8 @@ export default function Event() {
           <div className="event-date-container mb-3" data-aos="zoom-in">
             <span className="day event-date">Sabtu</span>
             <div className="time event-date">
-              <span className="date">30</span>
-              <span className="years">2023</span>
+              <span className="date">20</span>
+              <span className="years">2025</span>
             </div>
             <span className="month event-date">Desember</span>
           </div>
@@ -44,9 +44,9 @@ export default function Event() {
         </div>
         <div className="event-location text-center" data-aos="fade-up">
           <span className="location mb-1">Lokasi Acara</span>
-          <span className="house mb-1">Graha Pesona</span>
+          <span className="house mb-1">Perkasa Jaya</span>
           <span className="street">
-            Jl. Widara 8, W44/19, Citra Raya,
+            Jl. Suka Makmur, No. 10, Sukadamai,
             <br />
             Tangerang
           </span>

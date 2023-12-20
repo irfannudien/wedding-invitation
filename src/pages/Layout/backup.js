@@ -34,7 +34,7 @@ export default function Layout(props) {
 
       <div className={styles.layout}>
         <div style={{ color: "white", justifyContent: "center" }}>
-          <h1>Irfan & Winda</h1>
+          <h1>Pria & Wanita</h1>
           <p>Kepada Bpk/Ibu/Saudara/i,</p>
           <h3>Nama tamu</h3>
           <p>Akan melangsungkan acara Ngunduh Mantu dalam:</p>

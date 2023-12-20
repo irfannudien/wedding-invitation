@@ -8,39 +8,9 @@ import aos from "aos";
 export default function Location() {
   const baseURL = process.env.REACT_APP_MAPS_URL;
 
-  // const handleClick = () => {
-  //   window.location.href = baseURL;
-  // };
   const handleClick = () => {
     window.open(baseURL, "_blank");
   };
-
-  // const handleClick = () => {
-  //   const googleMapsUrl = baseURL;
-
-  //   // Check if 'intent://' scheme is supported
-  //   if (window.location.href.startsWith("http")) {
-  //     window.open(googleMapsUrl, "_blank");
-  //   } else {
-  //     // Fallback to opening in the browser
-  //     window.open(googleMapsUrl, "_system");
-  //   }
-  // };
-
-  // const handleClick = () => {
-  //   try {
-  //     const url = process.env.REACT_APP_MAPS_URL;
-  //     if (url) {
-  //       window.open(url, "_blank");
-  //     } else {
-  //       console.error(
-  //         "process.env.REACT_APP_MAPS_URL is not defined or empty."
-  //       );
-  //     }
-  //   } catch (error) {
-  //     console.error("Error opening the URL:", error);
-  //   }
-  // };
 
   useEffect(() => {
     aos.init({ duration: 2000, once: false });
@@ -52,7 +22,7 @@ export default function Location() {
       <div className="maps-container">
         <div className="maps" data-aos="fade-down">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d5608.906540274055!2d106.51640581160245!3d-6.251100026007743!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwMTUnMDUuOCJTIDEwNsKwMzAnNTkuMyJF!5e0!3m2!1sid!2sid!4v1699226899228!5m2!1sid!2sid"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31731.334648154094!2d106.51984075393386!3d-6.208623437539413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fe1ed5c883c9%3A0x30fb6ae08ea7b0b6!2sSukadamai%2C%20Kec.%20Cikupa%2C%20Kabupaten%20Tangerang%2C%20Banten!5e0!3m2!1sid!2sid!4v1703031022238!5m2!1sid!2sid"
             allowFullScreen="allowfullscreen"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
@@ -62,18 +32,14 @@ export default function Location() {
           />
         </div>
         <div className="desc-maps" data-aos="fade-up">
-          <span className="house mb-1">Graha Pesona</span>
+          <span className="house mb-1">Perkasa Jaya</span>
           <span className="street mb-3">
-            Jl. Widara 8, W44/19, Citra Raya,
+            Jl. Suka Makmur, No. 10, Sukadamai,
             <br />
             Tangerang
           </span>
 
-          <Button
-            className="button-maps"
-            // data-aos="fade-up"
-            onClick={handleClick}
-          >
+          <Button className="button-maps" onClick={handleClick}>
             Lihat Lokasi
           </Button>
         </div>

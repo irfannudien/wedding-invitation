@@ -24,10 +24,7 @@ function App() {
 
   return (
     <div className="App">
-      {/* current < 834 */}
-
       {windowWidth < 769 ? <Layout /> : <WarningPage />}
-      {/* <Layout /> */}
     </div>
   );
 }

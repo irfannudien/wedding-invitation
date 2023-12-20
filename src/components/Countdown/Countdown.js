@@ -3,7 +3,7 @@ import Countdown from "react-countdown";
 import "./countdown.css";
 
 export default function CountdownTimer() {
-  const targetDate = new Date("2023-12-30T23:59:59").getTime();
+  const targetDate = new Date("2025-12-20T23:59:59").getTime();
 
   const renderer = ({ days, hours, minutes, seconds, completed }) => {
     if (completed) {
@@ -55,7 +55,7 @@ export default function CountdownTimer() {
 
   return (
     <div className="countdown">
-      <p className="countdown-text">Sabtu, 30 Desember 2023</p>
+      <p className="countdown-text">Sabtu, 30 Desember 2025</p>
       <Countdown date={targetDate} renderer={renderer} />
     </div>
   );

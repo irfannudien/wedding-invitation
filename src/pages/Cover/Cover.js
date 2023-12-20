@@ -6,7 +6,7 @@ export default function cover() {
   return (
     <div className={styles.cover}>
       <div style={{ color: "white", justifyContent: "center" }}>
-        <h1>Irfan & Winda</h1>
+        <h1>Pria & Wanita</h1>
         <p>Kepada Bpk/Ibu/Saudara/i,</p>
         <h3>Nama tamu</h3>
         <p>Akan melangsungkan acara Ngunduh Mantu dalam:</p>
@@ -17,7 +17,6 @@ export default function cover() {
         >
           Lihat undangan
         </Button>
-        {/* <Link to="/undangan">Lihat undangan</Link> */}
       </div>
     </div>
   );

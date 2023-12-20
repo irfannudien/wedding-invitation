@@ -21,11 +21,11 @@ export default function Closing() {
         </div>
         <div className="close-text" data-aos="zoom-in">
           <span className="text2">Kami yang berbahagia</span>
-          <span className="text3">Irfan & Winda</span>
+          <span className="text3">Pria & Wanita</span>
         </div>
         <div className="footer-close-page" data-aos="fade-up">
           <span>&#169; 2023. Made with Love by</span>
-          <span>Irfan & Winda</span>
+          <span>Pria & Wanita</span>
         </div>
       </div>
     </Background>

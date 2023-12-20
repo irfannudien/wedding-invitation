@@ -35,12 +35,7 @@ export default function Modal(props) {
     <div className="modal-container">
       <Background />
       <div className="modal-content" data-aos="fade-up">
-        <img
-          alt=""
-          src={ImgLogo}
-          // style={{ width: "80%" }}
-          className="img-logo"
-        />
+        <img alt="" src={ImgLogo} className="img-logo" />
         <p className="welcome-text">
           Kepada Yth; <br /> Bpk/Ibu/Saudara/i,
         </p>

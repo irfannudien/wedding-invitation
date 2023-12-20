@@ -56,16 +56,7 @@ export default function Background(props) {
         />
         <img alt="" className={styles.footer} src={ImgFooter} />
       </div>
-      <div
-      // style={{
-      //   display: "flex",
-      //   flexDirection: "column",
-      //   width: "100vw",
-      // }}
-      // data-aos="fade-up"
-      >
-        {children}
-      </div>
+      <div>{children}</div>
     </div>
   );
 }

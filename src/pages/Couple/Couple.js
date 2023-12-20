@@ -19,11 +19,11 @@ export default function Couple() {
         <div className="man-img">
           <img alt="" src={man} className="couple-img" data-aos="fade-down" />
           <p className="couple-name" data-aos="fade-right">
-            Muhammad Irfannudien
+            Pria
           </p>
           <p className="couple-title" data-aos="fade-left">
-            Putra dari Bapak Sugeng Wahyudi
-            <br />& Ibu Ristiningsih
+            Putra dari Bapak Mempelai Pria
+            <br />& Ibu Mempelai Pria
           </p>
         </div>
         <div>
@@ -34,11 +34,11 @@ export default function Couple() {
         <div className="woman-img">
           <img alt="" src={woman} className="couple-img" data-aos="fade-up" />
           <p className="couple-name" data-aos="fade-right">
-            Tahan Suci Windasari
+            Wanita
           </p>
           <p className="couple-title" data-aos="fade-left">
-            Putri dari Bapak Sugito
-            <br />& Ibu Weri Haryanti
+            Putri dari Bapak Mempelai Wanita
+            <br />& Ibu Mempelai Wanita
           </p>
         </div>
       </div>

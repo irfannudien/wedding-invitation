@@ -29,9 +29,9 @@ export default function Opening() {
             // data-aos="zoom-in"
           />
           <h3 className="text-spin">
-            Irfan
+            Pria
             <br />&<br />
-            Winda
+            Wanita
           </h3>
         </div>
 

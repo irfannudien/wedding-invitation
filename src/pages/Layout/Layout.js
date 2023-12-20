@@ -48,68 +48,6 @@ export default function Layout() {
     };
   }, [activePage]);
 
-  // const handlers = useSwipeable({
-  //   onSwipedUp: () => handleSwipe(-1),
-  //   onSwipedDown: () => handleSwipe(1),
-  //   preventDefaultTouchmoveEvent: true,
-  //   trackTouch: true,
-  // });
-
-  // const handleSwipe = (deltaY, eventData) => {
-  //   const scrollData = document.getElementById("data-rsvp");
-  //   const insideContainerData =
-  //     scrollData &&
-  //     scrollData.contains(document.activeElement) &&
-  //     document.activeElement !== document.body;
-
-  //   if (!insideContainerData) {
-  //     // Logika Anda yang sudah ada untuk menangani swipe
-  //     if (deltaY > 0) {
-  //       setActivePage((prevPage) => (prevPage === 6 ? 6 : prevPage + 1));
-  //     } else if (deltaY < 0) {
-  //       setActivePage((prevPage) => (prevPage === 1 ? 1 : prevPage - 1));
-  //     }
-  //   } else {
-  //     const scrollContainer = document.getElementById("data-rsvp");
-
-  //     if (
-  //       scrollContainer &&
-  //       ((deltaY > 0 && scrollContainer.scrollTop > 0) ||
-  //         (deltaY < 0 &&
-  //           scrollContainer.scrollTop + scrollContainer.clientHeight <
-  //             scrollContainer.scrollHeight))
-  //     ) {
-  //       scrollContainer.scrollTop += deltaY * 10; // Sesuaikan kecepatan guliran
-  //     } else {
-  //       eventData.event.stopPropagation();
-  //     }
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   const handleScrollOrWheel = (e) => {
-  //     const scrollUl = document.getElementById("data-rsvp");
-
-  //     if (scrollUl && (scrollUl.contains(e.target) || scrollUl === e.target)) {
-  //       return;
-  //     }
-
-  //     if (e.deltaY > 0) {
-  //       setActivePage((prevPage) => (prevPage === 6 ? 6 : prevPage + 1));
-  //     } else if (e.deltaY < 0) {
-  //       setActivePage((prevPage) => (prevPage === 1 ? 1 : prevPage - 1));
-  //     }
-  //   };
-
-  //   window.addEventListener("wheel", handleScrollOrWheel);
-  //   window.addEventListener("scroll", handleScrollOrWheel);
-
-  //   return () => {
-  //     window.removeEventListener("wheel", handleScrollOrWheel);
-  //     window.removeEventListener("scroll", handleScrollOrWheel);
-  //   };
-  // }, [activePage]);
-
   const handlers = useSwipeable({
     onSwiped: (eventData) => {
       // Check if the swipe event occurred within the specific element
@@ -130,41 +68,7 @@ export default function Layout() {
         setActivePage((prevPage) => (prevPage === 6 ? 6 : prevPage + 1));
       }
     },
-    // You can customize other event handlers and options based on your needs
-    // onSwipedLeft, onSwipedRight, onSwipedUp, onSwipedDown, onSwipeStart, onSwiping, onTap, etc.
-    // ...config,
   });
-
-  // useEffect(() => {
-  //   const handleScrollOrWheel = (e) => {
-  //     // Your existing scroll logic for desktop
-  //     const scrollUl = document.getElementById("data-rsvp");
-  //     if (scrollUl && (scrollUl.contains(e.target) || scrollUl === e.target)) {
-  //       return;
-  //     }
-
-  //     if (e.deltaY > 0) {
-  //       setActivePage((prevPage) => (prevPage === 6 ? 6 : prevPage + 1));
-  //     } else if (e.deltaY < 0) {
-  //       setActivePage((prevPage) => (prevPage === 1 ? 1 : prevPage - 1));
-  //     }
-  //   };
-
-  //   const isTouchDevice =
-  //     "ontouchstart" in window ||
-  //     navigator.maxTouchPoints > 0 ||
-  //     navigator.msMaxTouchPoints > 0;
-
-  //   if (!isTouchDevice) {
-  //     window.addEventListener("wheel", handleScrollOrWheel);
-  //     window.addEventListener("scroll", handleScrollOrWheel);
-
-  //     return () => {
-  //       window.removeEventListener("wheel", handleScrollOrWheel);
-  //       window.removeEventListener("scroll", handleScrollOrWheel);
-  //     };
-  //   }
-  // }, [activePage]);
 
   const handlePageChange = (page) => {
     setActivePage(page);
@@ -195,15 +99,6 @@ export default function Layout() {
 
   return (
     <div>
-      {/* <CSSTransition
-        in={isModalOpen}
-        timeout={2000}
-        classNames="modal"
-        unmountOnExit
-      >
-        <Modal isModalOpen={isModalOpen} onModalOpen={handleOpenModal} />
-      </CSSTransition> */}
-
       <AnimatePresence mode="wait">
         {isModalOpen && (
           <motion.div

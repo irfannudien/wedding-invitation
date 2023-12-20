@@ -42,7 +42,7 @@ export default function Rsvp() {
 
     try {
       const id = idCounter;
-      const docRef = await addDoc(collection(db, "guestList"), {
+      const docRef = await addDoc(collection(db, "tamuUndangan"), {
         ...values,
         id: id,
         timestamp: serverTimestamp(),
@@ -64,7 +64,7 @@ export default function Rsvp() {
     const fetchData = async () => {
       try {
         const q = query(
-          collection(db, "guestList"),
+          collection(db, "tamuUndangan"),
           orderBy("timestamp", "desc")
         );
         const querySnapshot = await getDocs(q);
@@ -119,35 +119,6 @@ export default function Rsvp() {
       setCurrentPage(currentPage + 1);
     }
   };
-
-  // const handlers = useSwipeable({
-  //   onSwipedUp: () => handleSwipe(-1),
-  //   onSwipedDown: () => handleSwipe(1),
-  //   trackTouch: true,
-  // });
-
-  // const handleSwipe = (deltaY, event) => {
-  //   const isRsvpSwipeDisabled =
-  //     rsvpRef.current && rsvpRef.current.isSwipeDisabled();
-
-  //   if (!isRsvpSwipeDisabled) {
-  //     const scrollUl = document.getElementById("data-rsvp");
-
-  //     // Pengecekan apakah elemen yang disentuh memiliki ID "data-rsvp"
-  //     if (
-  //       scrollUl &&
-  //       (scrollUl.contains(event.target) || scrollUl === event.target)
-  //     ) {
-  //       return;
-  //     }
-
-  //     if (deltaY > 0) {
-  //       setActivePage((prevPage) => (prevPage === 6 ? 6 : prevPage + 1));
-  //     } else if (deltaY < 0) {
-  //       setActivePage((prevPage) => (prevPage === 1 ? 1 : prevPage - 1));
-  //     }
-  //   }
-  // };
 
   return (
     <Background>
